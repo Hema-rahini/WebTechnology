@@ -1,0 +1,11 @@
+ <script>
+ function nearestOdd(num) {
+    let number = parseInt(num);
+    if (number % 2 === 0) {
+        number += 1;
+    }
+    return number;
+ }
+ let userNumber = prompt("Enter a number:");
+ alert("Nearest Odd: " + nearestOdd(userNumber));
+ </script>
