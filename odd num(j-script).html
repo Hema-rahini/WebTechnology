@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<input id="num" type="number" placeholder="Enter a number">
+<button onclick="showOdd()">Go</button>
+<p id="out"></p>
+
+<script>
+function showOdd() {
+  let n = parseInt(document.getElementById('num').value);
+  if (isNaN(n)) return document.getElementById('out').innerText = "Enter a valid number";
+  let lower = n % 2 === 0 ? n - 1 : n - 2;
+  let upper = n % 2 === 0 ? n + 1 : n + 2;
+  document.getElementById('out').innerText = `Nearest odd numbers: ${lower}, ${upper}`;
+}
+</script>
+
+</body>
+</html>

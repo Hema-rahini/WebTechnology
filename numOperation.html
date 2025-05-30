@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Number Operations</title>
+</head>
+<body>
+<center>
+    <h1>Number Operations</h1>
+</center>
+    <div>
+        <h2>Exponential: <span id="exp"></span></h2>
+        <h2>Fixed Decimal: <span id="fixed"></span></h2>
+        <h2>Number to String: <span id="str"></span></h2>
+        <h2>Negative Infinity: <span id="inf"></span></h2>
+    </div>
+    <script>
+        document.getElementById('exp').textContent = Math.exp(2);
+        
+        document.getElementById('fixed').textContent = (3.14159).toFixed(2);
+        
+        document.getElementById('str').textContent = (123).toString();
+        
+        document.getElementById('inf').textContent = Number.NEGATIVE_INFINITY;
+    </script>
+</body>
+</html>

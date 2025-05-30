@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <style>
+    body { font-family: Arial; margin: 40px; background-color: #f9f9f9; }
+    .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+    .nav-buttons { margin-top: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Resume Builder</h2>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Skills:</label>
+      <textarea name="skills" rows="4"></textarea>
+
+      <label>Experience:</label>
+      <textarea name="experience" rows="4"></textarea>
+
+      <input type="submit" value="Generate Resume">
+    </form>
+
+    <div class="nav-buttons">
+      <a href="index.html"><button>⬅ Previous</button></a>
+      <a href="jobs.html"><button>Next ➡</button></a>
+    </div>
+  </div>
+</body>
+</html>
+
